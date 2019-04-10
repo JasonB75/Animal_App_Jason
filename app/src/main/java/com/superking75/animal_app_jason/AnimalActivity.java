@@ -23,7 +23,7 @@ public class AnimalActivity extends AppCompatActivity {
 
         Duck duck = new Duck();
         Fish fish = new Fish();
-        Seal flexSeal = new Seal();
+        Seal flexSeal = new Seal(); 
 
 
         mAnimals.add(fish);
