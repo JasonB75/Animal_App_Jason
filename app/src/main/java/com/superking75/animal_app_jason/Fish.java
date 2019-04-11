@@ -14,7 +14,7 @@ public class Fish extends Animal
 
     public Fish()
     {
-       // type = "Fish";
+        type = "Fish";
     }
 
 

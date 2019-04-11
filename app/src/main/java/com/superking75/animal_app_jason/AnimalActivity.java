@@ -23,17 +23,24 @@ public class AnimalActivity extends AppCompatActivity {
 
         Duck duck = new Duck();
         Fish fish = new Fish();
-        Seal flexSeal = new Seal(); 
+        Seal flexSeal = new Seal();
+        Fox fox = new Fox();
 
 
         mAnimals.add(fish);
         mAnimals.add(flexSeal);
         mAnimals.add(duck);
+        mAnimals.add(fox);
 
 
         for (Animal n: mAnimals)
         {
-           this.output.append("\n" + n.getType() + " say " + n.say());
+           this.output.append("\n" + n.getType() + " says " + n.say());
+
+            if (n instanceof Seal)
+            { this.output.append("\n" + ((Seal)n).play()); }
+            if (n instanceof Fox) {
+                this.output.append("\n" + ((Fox)n).play());
 
         }
        // this.output.append("\nDuck say: " + mAnimals.get(1).say());
@@ -41,4 +48,4 @@ public class AnimalActivity extends AppCompatActivity {
 
 
     }
-}
+}}

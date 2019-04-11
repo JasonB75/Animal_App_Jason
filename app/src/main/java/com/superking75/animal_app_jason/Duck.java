@@ -14,7 +14,7 @@ public class Duck extends Animal
     public Duck()
     {
        // mAnimals.add(Duck)
-       // type = "Duck";
+        type = "Duck";
 
     }
 

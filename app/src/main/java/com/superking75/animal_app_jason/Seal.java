@@ -1,6 +1,6 @@
 package com.superking75.animal_app_jason;
 
-public class Seal extends Animal
+public class Seal extends Animal implements Fun
 {
     public final String TYPE = "seal";
 
@@ -8,6 +8,10 @@ public class Seal extends Animal
         return TYPE;
     }
 
+    public String play()
+    {
+        return "Da Seal cuts a boat in half";
+    }
 
     @Override
     public String say()
@@ -19,7 +23,7 @@ public class Seal extends Animal
 
     public Seal()
     {
-       // type = "Seal";
+        type = "Seal";
     }
 
 
